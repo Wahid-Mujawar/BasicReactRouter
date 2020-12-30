@@ -11,6 +11,7 @@ import {
 
 import MainPage from "./RouterPages";
 import NotFoundPage from "./RouterPages/404";
+import UsersPage from './RouterPages/users';
 
 class App extends Component {
   render () {
