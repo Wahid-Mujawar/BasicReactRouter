@@ -10,11 +10,15 @@ import {
 } from "react-router-dom";
 
 import MainPage from "./RouterPages";
+import NotFoundPage from "./RouterPages";
 
 class App extends Component {
   render () {
     return <Router>
-      <Route path="/" component={MainPage}/>
+      <Switch>
+      <Route exact path="/" component={MainPage}/>
+      <Route component={NotFoundPage}/>
+      </Switch>
     </Router>
   }
 }
