@@ -11,14 +11,16 @@ import {
 
 import MainPage from "./RouterPages";
 import NotFoundPage from "./RouterPages/404";
-import UsersPage from './RouterPages/users';
+import UsersPage from "./RouterPages/users";
 
 class App extends Component {
   render () {
     return <Router>
       <Switch>
-      <Route exact path="/" component={MainPage}/>
-      <Route component={NotFoundPage}/>
+      <Route exact path ="/" component={MainPage}/>
+      <Route exact path ="/404" component={NotFoundPage}/>
+      <Route exact path ="/users" component={UsersPage}/>
+      <Redirect to="/404"/>
       </Switch>
     </Router>
   }

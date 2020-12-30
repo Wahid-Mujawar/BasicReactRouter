@@ -4,10 +4,11 @@ const UsersPage = () => {
    return (
       <div>
          <ul>
-         {"Tom","Jerry","Bill","Harry"}
+         {["Tom","Jerry","Bill","Harry"].map((user, idx) => {
+            return <li key ={idx} >{user}</li>
+         })}
          </ul>
       </div>
    )
 }
-
-export default NotFoundPage;
+export default UsersPage;
