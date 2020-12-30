@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 import MainPage from "./RouterPages";
-import NotFoundPage from "./RouterPages";
+import NotFoundPage from "./RouterPages/404";
 
 class App extends Component {
   render () {
